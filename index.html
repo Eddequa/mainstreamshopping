@@ -12,51 +12,89 @@
   <nav class="bg-white shadow-md p-4 flex justify-between">
     <h1 class="text-2xl font-bold">MainstreamShopping</h1>
     <div>
-      <a href="#" class="mx-2">Home</a>
-      <a href="#products" class="mx-2">Products</a>
+      <a href="#home" class="mx-2">Home</a>
+      <a href="#shop" class="mx-2">Shop</a>
+      <a href="#upload" class="mx-2">Upload</a>
       <a href="#contact" class="mx-2">Contact</a>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="text-center p-10 bg-blue-500 text-white">
-    <h2 class="text-4xl font-bold mb-4">Shop Trending Products</h2>
-    <p class="mb-6">Best deals on fashion, gadgets, and more</p>
-    <button class="bg-white text-blue-500 px-6 py-2 rounded">Shop Now</button>
+  <!-- Hero -->
+  <section id="home" class="text-center p-10 bg-blue-500 text-white">
+    <h2 class="text-4xl font-bold mb-4">Welcome to MainstreamShopping</h2>
+    <p class="mb-6">Shop trending products across multiple categories</p>
   </section>
 
-  <!-- Products -->
-  <section id="products" class="p-10">
-    <h2 class="text-3xl font-bold mb-6 text-center">Featured Products</h2>
+  <!-- Categories / Shop -->
+  <section id="shop" class="p-10">
+    <h2 class="text-3xl font-bold mb-6 text-center">Shop by Category</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-      <!-- Product Card -->
-      <div class="bg-white p-4 rounded shadow">
-        <img src="https://via.placeholder.com/300" class="mb-4">
-        <h3 class="font-bold">Product 1</h3>
-        <p>$25</p>
-        <button class="bg-blue-500 text-white px-4 py-2 mt-2">Buy</button>
+      <div class="bg-white p-6 rounded shadow text-center">
+        <h3 class="font-bold text-xl">Beauty & Personal Care</h3>
+        <p>Skincare, hair, hygiene essentials</p>
       </div>
 
-      <div class="bg-white p-4 rounded shadow">
-        <img src="https://via.placeholder.com/300" class="mb-4">
-        <h3 class="font-bold">Product 2</h3>
-        <p>$40</p>
-        <button class="bg-blue-500 text-white px-4 py-2 mt-2">Buy</button>
+      <div class="bg-white p-6 rounded shadow text-center">
+        <h3 class="font-bold text-xl">Home & Kitchen</h3>
+        <p>Tools, organizers, cleaning supplies</p>
       </div>
 
-      <div class="bg-white p-4 rounded shadow">
-        <img src="https://via.placeholder.com/300" class="mb-4">
-        <h3 class="font-bold">Product 3</h3>
-        <p>$60</p>
-        <button class="bg-blue-500 text-white px-4 py-2 mt-2">Buy</button>
+      <div class="bg-white p-6 rounded shadow text-center">
+        <h3 class="font-bold text-xl">Fashion</h3>
+        <p>Clothing, gym wear, lingerie</p>
+      </div>
+
+      <div class="bg-white p-6 rounded shadow text-center">
+        <h3 class="font-bold text-xl">Phone Accessories</h3>
+        <p>Cases, chargers, gadgets</p>
+      </div>
+
+      <div class="bg-white p-6 rounded shadow text-center">
+        <h3 class="font-bold text-xl">Problem-Solving Gadgets</h3>
+        <p>Health, comfort, daily solutions</p>
+      </div>
+
+      <div class="bg-white p-6 rounded shadow text-center">
+        <h3 class="font-bold text-xl">Pet Products</h3>
+        <p>Grooming, feeding, toys</p>
       </div>
 
     </div>
   </section>
 
+  <!-- Upload Section (for adding products manually) -->
+  <section id="upload" class="p-10 bg-gray-200">
+    <h2 class="text-3xl font-bold mb-6 text-center">Add New Product</h2>
+    <div class="max-w-xl mx-auto bg-white p-6 rounded shadow">
+
+      <label class="block mb-2">Product Name</label>
+      <input type="text" class="w-full p-2 border mb-4" placeholder="Enter product name">
+
+      <label class="block mb-2">Price</label>
+      <input type="text" class="w-full p-2 border mb-4" placeholder="$">
+
+      <label class="block mb-2">Category</label>
+      <select class="w-full p-2 border mb-4">
+        <option>Beauty & Personal Care</option>
+        <option>Home & Kitchen</option>
+        <option>Fashion</option>
+        <option>Phone Accessories</option>
+        <option>Problem-Solving Gadgets</option>
+        <option>Pet Products</option>
+      </select>
+
+      <label class="block mb-2">Upload Image</label>
+      <input type="file" class="w-full mb-4">
+
+      <button class="bg-blue-500 text-white px-4 py-2 w-full">Add Product</button>
+
+      <p class="text-sm text-gray-500 mt-4">Note: This is a demo uploader. Products must still be added manually in code or backend.</p>
+    </div>
+  </section>
+
   <!-- Contact -->
-  <section id="contact" class="p-10 bg-gray-200 text-center">
+  <section id="contact" class="p-10 text-center">
     <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
     <p>Email: support@mainstreamshopping.com</p>
   </section>
